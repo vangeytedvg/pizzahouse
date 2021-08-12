@@ -3,68 +3,119 @@
     width: 200px;
 }
 
-
-html, body {
+html,
+body {
     background-color: #fff;
     color: #636b6f;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0;
-  }
-  
-  .full-height {
+}
+
+.full-height {
     height: 100vh;
-  }
-  
-  .flex-center {
+}
+
+.flex-center {
     align-items: center;
     display: flex;
     justify-content: center;
-  }
-  
-  .position-ref {
+}
+
+.position-ref {
     position: relative;
-  }
-  
-  .top-right {
+}
+
+.top-right {
     position: absolute;
     right: 10px;
     top: 18px;
-  }
-  
-  .content {
+}
+
+.content {
     text-align: center;
-  }
-  
-  .links > a {
+}
+
+.links > a {
     color: #636b6f;
     padding: 0 25px;
     font-size: 13px;
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     text-transform: uppercase;
-  }
-  
-  .m-b-md {
+}
+
+.m-b-md {
     margin-bottom: 30px;
-  }
-  
-  footer{
+}
+
+footer {
     position: absolute;
     width: 100%;
     bottom: 0;
     background: #eee;
     padding: 20px;
     text-align: center;
-  }
-  
-  .title {
+}
+
+.title {
     display: flex;
     align-content: center;
     justify-content: center;
     font-size: 50px;
     padding: 12px 0;
     color: #5e2195;
-  }
+}
+
+/* Buttons Section in DenkaStrap! */
+.button-std {
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgb(161, 161, 161);
+    color: black;
+    padding: 7px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-ok {
+    background-color: rgb(43, 134, 73);
+}
+
+.btn-cancel {
+    background-color: rgb(121, 121, 161);
+}
+
+.button-std:hover {
+    color: rgb(255, 255, 255);
+}
+
+.button-std:active {
+    box-shadow: none;
+    top: 2px;
+}
+
+/* Inputs */
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid gray;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(235, 255, 255);
+}
+
+/* Combo boxes */
+select {
+    width: auto;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(206, 231, 255);
+    font: 1em Roboto;
+}
