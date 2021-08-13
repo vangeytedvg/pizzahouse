@@ -49,4 +49,23 @@ class PizzaController extends Controller
     {
         return view('pizzas.create');
     }
+
+    /**
+     * Store a pizza order
+     */
+    public function store()
+    {
+        // Handle the passed data, create instance of Pizza Model
+        $pizza = new Pizza();
+        $pizza->name = request('name');
+        $pizza->type = request('type');
+        $pizza->base = request('base');
+        $pizza->price = 10;
+        $pizza->toppings = request('toppings');
+        // Commit
+        $pizza->save();
+        // After saving redirect to homepage, but with a
+        // little trick...
+        return redirect("/")->with("msg", "Thank you for ordering!");
+    }
 }

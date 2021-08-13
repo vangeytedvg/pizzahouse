@@ -1,6 +1,6 @@
 .logoimg {
     padding: 20px;
-    width: 200px;
+    width: 300px;
 }
 
 html,
@@ -73,11 +73,17 @@ footer {
 .button-std {
     border-radius: 5px;
     box-shadow: 2px 2px 4px rgb(161, 161, 161);
-    color: black;
-    padding: 7px;
+    color: rgb(202, 202, 202);
+    padding: 8px 8px;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-link {
+    background-color: rgb(27, 90, 185);
+    color: rgb(219, 219, 219);
 }
 
 .btn-ok {
@@ -112,7 +118,7 @@ input[type="text"]:focus {
 
 /* Combo boxes */
 select {
-    width: auto;
+    width: 100%;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
