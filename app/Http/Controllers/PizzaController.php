@@ -68,4 +68,13 @@ class PizzaController extends Controller
         // little trick...
         return redirect("/")->with("msg", "Thank you for ordering!");
     }
+
+    public function destroy($id)
+    {
+        // Remove a record
+        $pizza = Pizza::findOrFail($id);
+        $pizza->delete();
+        // Go back to the list
+        return redirect('/pizzas');
+    }
 }

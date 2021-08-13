@@ -38,3 +38,10 @@ Route::get('/pizzas/{id}', [PizzaController::class, 'show']);
  */
 
 Route::post('/pizzas', [PizzaController::class, 'store']);
+
+/**
+ *
+ * DELETE routes, video 22/30
+ *
+ */
+Route::delete('/pizzas/{id}', [PizzaController::class, 'destroy']);

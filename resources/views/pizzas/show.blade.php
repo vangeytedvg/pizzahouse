@@ -12,5 +12,18 @@
             @endforeach
         </ul>
     </div>
-    <a href="/pizzas" class="button-std btn-ok">Back To Menu</a>
+    <div>
+    <form action="/pizzas/{{ $pizza->id }}" method="POST">
+            @csrf
+            <!-- Specific for Laravel -->
+            @method('DELETE')
+            <button class="button-std btn-del">Delete Order</button>
+        </form>
+    </div>
+    <hr>
+    <section>
+    <div>
+        <a href="/pizzas" class="button-std btn-ok">Back To Menu</a>
+    </div>
+    </section>
 @endsection
