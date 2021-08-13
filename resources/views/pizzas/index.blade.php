@@ -1,11 +1,12 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 @section('content')
 <div class="wrapper pizza-index">
     {{-- Foreach loop, looks more like python --}}
     <h1>Pizza Orders</h1>
     @foreach($pizzas as $pizza)
-        <div>
-            <a href="/pizzas/{{ $pizza->id }}">{{ $pizza->name }}</a>
+        <div class="pizza-item">
+            <img src="/img/pizzaicon.png" alt="Pizza Icon">
+            <h4><a href="/pizzas/{{ $pizza->id }}">{{ $pizza->name }}</a></h4>
         </div>
     @endforeach
 </div>

@@ -1,4 +1,4 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 @section('content')
 <!-- We get this info from the PizzaController/show method -->
     <div class="wrapper pizza-details">

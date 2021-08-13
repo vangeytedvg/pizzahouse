@@ -10,6 +10,13 @@ use Illuminate\Http\Request;
  */
 class PizzaController extends Controller
 {
+
+    // If not logged in, we get kicked to the login page
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // Index
     public function index()
     {
